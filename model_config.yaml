@@ -1,0 +1,23 @@
+data:
+  min_word_freq: 2
+  test_samples: 15319
+  train_samples: 122551
+  val_samples: 15319
+  vocab_size: 25197
+generation:
+  temperature: 0.8
+  top_k: 50
+  top_p: 0.9
+model:
+  dropout: 0.3
+  embedding_dim: 128
+  hidden_dim: 256
+  num_layers: 2
+  type: LSTM
+  vocab_size: 25197
+training:
+  batch_size: 128
+  epochs: 3
+  learning_rate: 0.001
+  max_seq_len: 80
+  weight_decay: 1.0e-05
